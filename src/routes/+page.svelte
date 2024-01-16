@@ -53,7 +53,7 @@
         />
         <div
           data-popup="popupAutocomplete"
-          class="w-1/4 p-1 bg-gray-600 rounded"
+          class="w-1/4 p-1 bg-gray-600 rounded max-h-96 overflow-scroll"
         >
           <Autocomplete
             bind:input
