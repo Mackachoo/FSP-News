@@ -1,38 +1,32 @@
-# create-svelte
+# FSP News - A Simple News Page for any country
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
+<p>
+  <!-- Chrome -->
+  <img alt="Tested with Chrome" src="https://img.shields.io/badge/Google_chrome-4285F4?style=for-the-badge&logo=Google-chrome&logoColor=white" />
+  <!-- Svelte -->
+  <img alt="Built with Svelte" src="https://img.shields.io/badge/Svelte-4A4A55?style=for-the-badge&logo=svelte&logoColor=FF3E00" />
+</p>
 
-## Creating a project
+## 🔮 Description
 
-If you're seeing this, you've probably already done this step. Congrats!
+This is a simple news app that shows the top news stories from different countries and categories. The user can select a country from a dropdown menu, and the top news stories from that country are displayed. The user can also filter the news stories by category. This was done using the NewsAPI.
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+This project leverages a range of technologies and skills. It's built with Svelte, a modern JavaScript compiler, which is then compiled into highly efficient code for the browser. The project uses Svelte's reactivity features to update news stories dynamically based on the selected country or category. News data is fetched from NewsAPI, a straightforward API providing global news data.
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+## 🚀 How to run
 
-## Developing
+### Develop Locally
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
 
-```bash
-npm run dev
+1. Install dependancies with `npm i`
+2. Run site with `npm run dev`
+3. Navigate to http://localhost:5173/ by default however port may change if there are conflicts.
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
 
-## Building
+### Build and Deploy
 
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+1. Install dependancies with `npm i`
+2. Build site with `npm run build`
+3. Preview this build with `npm run preview`
+4. Navigate to http://localhost:5173/ by default however port may change if there are conflicts.
+5. Use `npm run deply` to publish to gh-pages branch of the repository to be published with GitHub pages.
