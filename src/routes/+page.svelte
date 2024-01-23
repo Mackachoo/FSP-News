@@ -71,9 +71,10 @@
         {country}
       </h3>
       <div class="flex flex-row justify-between my-4">
+        <!-- Categories Buttons -->
         {#each categoryOptions as category}
           <button
-            class={"py-1 px-2 text-gray-900 bg-orange-600 rounded capitalize " +
+            class={"py-1 px-2 text-gray-900 bg-orange-600 rounded capitalize overflow-clip " +
               (categories.includes(category)
                 ? "bg-opacity-100"
                 : "bg-opacity-50")}
