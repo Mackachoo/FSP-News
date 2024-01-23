@@ -70,11 +70,12 @@
         Top Stories in {country[0] === "U" ? "the" : ""}
         {country}
       </h3>
-      <div class="flex flex-row justify-between my-4">
-        <!-- Categories Buttons -->
+
+      <!-- Categories Buttons -->
+      <div class="flex flex-row flex-wrap justify-between my-2">
         {#each categoryOptions as category}
           <button
-            class={"py-1 px-2 text-gray-900 bg-orange-600 rounded capitalize overflow-clip " +
+            class={"my-2 mx-1 py-1 px-2 text-gray-900 bg-orange-600 rounded capitalize overflow-clip " +
               (categories.includes(category)
                 ? "bg-opacity-100"
                 : "bg-opacity-50")}
@@ -84,6 +85,8 @@
           </button>
         {/each}
       </div>
+
+      <!-- News Articles -->
       {#key [cid, categories, page]}
         <div in:fly={{ x: "50%", delay: 500 }} out:fly={{ x: "-50%" }}>
           <TopNews {cid} {categories} {page} />
